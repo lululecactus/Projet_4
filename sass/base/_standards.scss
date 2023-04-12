@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1 {
+    margin: 0;
+    padding-top: 40px;
+    font-size: 24px;
+}
+
+button {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1 + p {
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+::placeholder {
+    font-size: 16px;
+    color: #353535;
+}
