@@ -80,6 +80,68 @@ h1 + p {
   height: 45px;
 }
 
+.card__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-radius: 22px;
+  width: 90%;
+}
+
+.card {
+  height: 251px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+}
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.card__txt h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.card__txt p {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.card__like {
+  width: 22px;
+  height: 22px;
+  margin-top: 20px;
+}
+
+.card__heart {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.card__heart:hover {
+  -webkit-background-clip: text;
+  font-weight: 700;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+}
+
 .header {
   height: 63px;
   display: flex;
@@ -106,6 +168,9 @@ h1 + p {
   height: 287px;
 }
 
+.functioning {
+  margin-bottom: 50px;
+}
 .functioning__title {
   margin-top: 48px;
   margin-bottom: 16px;
@@ -115,4 +180,20 @@ h1 + p {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+
+.restaurants {
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants h2 {
+  padding-left: 5%;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */

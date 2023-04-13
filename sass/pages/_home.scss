@@ -10,7 +10,7 @@
 
 
 .functioning {
-
+    margin-bottom: 50px;
 
 
     &__title {
@@ -28,3 +28,20 @@
     }
 }
 
+
+.restaurants {
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+// demande avis du mentor pour le padding en %
+    h2 {
+        padding-left: 5%;
+    }
+
+
+    &__cards {
+        @include flex-center(column);
+        gap: 20px;
+
+    }
+}
