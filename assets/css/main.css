@@ -159,6 +159,34 @@ h1 + p {
   align-items: center;
 }
 
+.footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 22px 25px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer li {
+  display: flex;
+  gap: 15px;
+}
+.footer h3 {
+  margin: 0;
+  font-family: Shrikhand, cursive;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#footer__icon {
+  display: flex;
+  gap: 10px;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -186,6 +214,7 @@ h1 + p {
   background-color: #F7F7F7;
   display: flex;
   flex-direction: column;
+  padding-bottom: 70px;
 }
 .restaurants h2 {
   padding-left: 5%;
