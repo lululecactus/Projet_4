@@ -44,6 +44,27 @@ h1 + p {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
+.functioning__items {
+  background-color: #F7F7F7;
+  width: 86%;
+  height: 73px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+}
+
+.functioning__icons {
+  color: #7E7E7E;
+}
+.functioning__icons--purple {
+  color: #9356DC;
+}
+
 .form {
   display: flex;
   flex-direction: row;
@@ -83,4 +104,15 @@ h1 + p {
   text-align: center;
   background-color: #F7F7F7;
   height: 287px;
+}
+
+.functioning__title {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  margin-left: 40px;
+}
+.functioning__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }/*# sourceMappingURL=main.css.map */

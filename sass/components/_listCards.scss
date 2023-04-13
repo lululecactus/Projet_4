@@ -1,0 +1,20 @@
+
+.functioning__items {
+    background-color: #F7F7F7;
+    width: 86%;
+    height: 73px;
+    @include flex-center;
+    gap: 20px;
+    border-radius: 20px;
+    @include shadow;
+    font-weight: 500;
+
+    
+}
+
+.functioning__icons {
+    color:  #7E7E7E;
+    &--purple{
+        color: $primary-color
+    }
+}

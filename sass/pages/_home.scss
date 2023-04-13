@@ -7,3 +7,24 @@
     background-color: #F7F7F7;
     height: 287px;
 }
+
+
+.functioning {
+
+
+
+    &__title {
+        margin-top: 48px;
+        margin-bottom: 16px;
+        margin-left: 40px;
+
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+    }
+}
+
