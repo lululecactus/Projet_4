@@ -1,24 +1,21 @@
-.principal-button {
-    width: 218px;
+.button {
     height: 50px;
     border-radius: 25px;
     border: none;
     background: linear-gradient(193.33deg, $primary-color -11.44%, $secondary-color 123.93%);
     @include shadow(0px, 4px, 10px, rgba(0, 0, 0, 0.25));
     color: #FFF;
-    padding: 0;
-    
 
+    &__principal{
+        width: 218px;
+
+    }
+    // effet sur le degrader au survol
     &:hover {
         background: linear-gradient(193.33deg, $primary-variation -11.44%, $secondary-variation 123.93%);
         cursor: pointer;
         @include shadow(0px, 4px, 15px, rgba(0, 0, 0, 0.25));
-
-       
-
     }
-
-    
 
 }
 

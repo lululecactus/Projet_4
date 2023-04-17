@@ -35,7 +35,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    h3 {
+    .card__title {
         margin-top: 10px;
         margin-bottom: 0;
     }
@@ -46,20 +46,25 @@
         font-weight: 300;
     }
 }
-
-.card__like {
+// creation du coeur 
+.like {
     width: 22px;
     height: 22px;
     margin-top: 20px;
+
+    &__heart {
+        font-size: 22px;
+        font-weight: 400;
+// remplissage du coeur en degrader  de couleur
+        &:hover {
+            -webkit-background-clip: text;
+            font-weight: 700;
+            background-image: linear-gradient($primary-color, $secondary-color);
+            -webkit-text-fill-color: transparent;
+            
+        }
+
+
+    }
 }
 
-.card__heart {
-    font-size: 22px;
-    font-weight: 400;
-}
-.card__heart:hover {
-    -webkit-background-clip: text;
-    font-weight: 700;
-    background-image: linear-gradient($primary-color, $secondary-color);
-    -webkit-text-fill-color: transparent;
-}
