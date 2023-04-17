@@ -8,8 +8,22 @@
     border-radius: 20px;
     @include shadow;
     font-weight: 500;
+    position: relative;
+    padding-left: 10px;
 
     
+}
+
+.functioning__step {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    color: #fff;
+    position: absolute;
+    left: -13px;
+    @include flex-center;
+
 }
 
 .functioning__icons {
