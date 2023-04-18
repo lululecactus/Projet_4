@@ -4,6 +4,7 @@
     color: #000;
     border-radius: 22px;
     width: 90%;
+    position: relative;
 }
 
 .card {
@@ -68,3 +69,14 @@
     }
 }
 
+.card__new {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 80px;
+    height: 29px;
+    color: #008766;
+    background-color: #99E2D0;
+    @include flex-center;
+    border-radius: 2px;
+}
