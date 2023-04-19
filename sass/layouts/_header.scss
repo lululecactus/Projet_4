@@ -9,6 +9,24 @@
         height: 44px;
         @include flex-center;
 
+     
     }
 
+    a {
+        text-decoration: none;
+        color: #353535;
+    }
+
+
 }
+
+.header__return {
+    width: 30px;
+    height: 30px;
+    @include flex-center;
+    position: absolute;
+    left: 25px;
+}
+
+
+
