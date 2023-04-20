@@ -1,0 +1,26 @@
+.menu__cards {
+    width: 93%;
+    height: 69px;
+    border-radius: 15px;
+    @include shadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.menu__prices {
+
+p {
+   margin-top: 32px;
+   margin-bottom: 12px;
+}
+
+}
+
+.starters__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

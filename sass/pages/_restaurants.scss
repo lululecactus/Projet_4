@@ -33,3 +33,24 @@
     gap: 25px;
     margin-top: 32px;
 }
+
+
+.starters {
+    margin-left: 12px;
+
+    &__title {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 12px;
+        margin-top: 0;
+
+        &::after {
+            content: '';
+            display: block;
+             border: 3px solid $tertiary-color;
+             width: 40px;
+             margin-top: 9px;
+        }
+    }
+}
+

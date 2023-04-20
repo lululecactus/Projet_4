@@ -178,6 +178,29 @@ h1 + p {
   border-radius: 2px;
 }
 
+.menu__cards {
+  width: 93%;
+  height: 69px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu__prices p {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.starters__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .header {
   height: 63px;
   display: flex;
@@ -313,4 +336,21 @@ h1 + p {
   align-items: center;
   gap: 25px;
   margin-top: 32px;
+}
+
+.starters {
+  margin-left: 12px;
+}
+.starters__title {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.starters__title::after {
+  content: "";
+  display: block;
+  border: 3px solid #99E2D0;
+  width: 40px;
+  margin-top: 9px;
 }/*# sourceMappingURL=main.css.map */
