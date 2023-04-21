@@ -45,3 +45,12 @@
 
     }
 }
+
+.title a {
+    width: 218px;
+    border-radius: 25px
+}
+
+.button__explore {
+    @include flex-center;
+}

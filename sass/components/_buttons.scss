@@ -10,6 +10,13 @@
         width: 218px;
 
     }
+
+    &__secondary {
+        width: 166px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
     // effet sur le degrader au survol
     &:hover {
         background: linear-gradient(193.33deg, $primary-variation -11.44%, $secondary-variation 123.93%);
@@ -19,3 +26,7 @@
 
 }
 
+
+.button__order {
+    @include flex-center;
+}
