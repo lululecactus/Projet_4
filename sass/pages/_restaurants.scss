@@ -11,12 +11,14 @@
 
 .restaurant__menu {
     width: 100%;
-    height: 500px;
     background-color:#F7F7F7;
     border-top-right-radius:  50px;
     border-top-left-radius: 50px;
     position: absolute;
     top: 300px;
+    display:flex ;
+    flex-direction: column;
+    gap: 40px;
 
 }
 
@@ -35,22 +37,32 @@
 }
 
 
-.starters {
-    margin-left: 12px;
-
-    &__title {
-        font-size: 16px;
-        font-weight: 300;
-        margin-bottom: 12px;
-        margin-top: 0;
+.menu__title {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 12px;
+    margin-top: 0;
 
         &::after {
             content: '';
             display: block;
-             border: 3px solid $tertiary-color;
-             width: 40px;
+             border-bottom: 3px solid $tertiary-color;
+             width: 25px;
              margin-top: 9px;
         }
-    }
 }
 
+.starters,
+.main-dish,
+.desserts {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.starters__cards,
+.main-dish__cards,
+.desserts__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
