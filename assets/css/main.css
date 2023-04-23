@@ -199,6 +199,7 @@ h1 + p {
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: #FFF;
 }
 
 .menu__prices p {
@@ -431,4 +432,12 @@ h1 + p {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .restaurant__menu {
+    width: 75%;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
 }/*# sourceMappingURL=main.css.map */

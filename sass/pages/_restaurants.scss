@@ -66,3 +66,17 @@
     flex-direction: column;
     gap: 12px;
 }
+
+
+// responsive 
+
+@media (min-width: 768px) {
+
+   .restaurant__menu {
+    width: 75%;
+    margin-left: 12%;
+    margin-right: 12%;
+    
+   }
+
+}
