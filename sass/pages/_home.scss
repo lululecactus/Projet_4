@@ -54,3 +54,34 @@
 .button__explore {
     @include flex-center;
 }
+
+
+// responsive for tabelette & desktop
+
+@media (min-width: 768px) {
+    .functioning__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .functioning__items {
+        width: 30%;
+    }
+
+    .restaurants__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+    }
+
+    .card__link {
+        width: 45%;
+    }
+
+
+   
+}

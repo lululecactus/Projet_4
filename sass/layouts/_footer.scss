@@ -35,3 +35,23 @@
     display: flex;
     gap: 10px;
 }
+
+
+
+// responsive for tablet &desktop 
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 100px;
+
+        ul {
+             display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+        }
+    }
+}
