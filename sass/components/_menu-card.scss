@@ -1,0 +1,26 @@
+.menu__card {
+    background-color: #fff;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    @include shadow;
+    padding: 12px 15px;
+}
+
+.menu__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+.menu__price {
+    display: flex;
+    align-items: flex-end;
+}

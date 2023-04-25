@@ -1,26 +1,15 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    
-}
+// define typography for the whole site
+*{
+    font-family:'Roboto';  
+  }
 
-h1 {
-    margin: 0;
-    padding-top: 40px;
-    font-size: 24px;
-}
+  a {
+    text-decoration: none;
+    color: #000;
+  } 
 
-button {
-    font-weight: 500;
-    font-size: 16px;
-}
-
-h1 + p {
-    font-size: 18px;
-    font-weight: 300;
-
-}
-
-::placeholder {
-    font-size: 16px;
-    color: #353535;
-}
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  

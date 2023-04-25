@@ -1,87 +1,59 @@
-.title {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 40px;
     text-align: center;
-    background-color: #F7F7F7;
-    height: 287px;
+    font-family: Roboto, sans-serif;
 }
 
-
-.functioning {
-    margin-bottom: 50px;
-
-    &__title {
-        margin-top: 48px;
-        margin-bottom: 16px;
-        margin-left: 40px;
-
-    }
-
-    &__list {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-
-    }
+h1 + p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 27px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
 }
-
 
 .restaurants {
-    background-color: #F7F7F7;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 70px;
+    background-color: #F6F6F6;
+    padding-top: 54px;
+    padding-left: 20px;
+    padding-right: 20px;
 
-    
-    h2 {
-        padding-left: 5%;
+    &__heading {
+        font-family: Roboto, sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 28px;
     }
-
 
     &__cards {
-        @include flex-center(column);
-        gap: 20px;
-
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding-bottom: 66px;
     }
 }
-
-.title a {
-    width: 218px;
-    border-radius: 25px
-}
-
-.button__explore {
-    @include flex-center;
-}
-
-
-// responsive for tabelette & desktop
 
 @media (min-width: 768px) {
-    .functioning__list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 32px;
-    }
 
-    .functioning__items {
-        width: 30%;
+    .restaurants {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .restaurants__cards {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
-       
+        justify-content: space-between;
+        row-gap: 50px;
     }
 
-    .card__link {
+    .restaurant-link {
         width: 45%;
+        
     }
-
-
-   
 }

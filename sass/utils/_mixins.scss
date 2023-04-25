@@ -1,14 +1,12 @@
-// center elements with flexbox
-
-@mixin flex-center($flex-direction: row) {
+// mixin flexbox center by default 
+@mixin flex-center( $direction: row, $justify-content: center, $align-items: center) {
     display: flex;
-    flex-direction: $flex-direction;
-    justify-content: center;
-    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
 }
 
-// shadow effect
-
-@mixin shadow($offset-x: 0px, $offset-y: 4px, $blur: 15px, $color: rgba(0, 0, 0, 0.15)) {
-    box-shadow: $offset-x $offset-y $blur $color;
+// adding shadow effect
+@mixin shadow($offset-x: 0, $offset-y: 4px,  $blur: 15px ,$color:rgba(0, 0, 0, 0.15) ){
+    box-shadow:$offset-x $offset-y $blur $color;
 }

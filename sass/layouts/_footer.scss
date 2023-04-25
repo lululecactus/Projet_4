@@ -1,57 +1,57 @@
 .footer {
     background-color: #353535;
-    color: #fff;
     padding: 22px 25px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
-    &__menu {
-        position: relative;
-        top: 1135px;
-    }
-
-    h3 {
-        margin: 0;
+    &__heading {
         font-family: Shrikhand, cursive;
-        font-size: 18px;
         font-weight: 400;
+        font-size: 18px;
     }
 
-    ul {
+    &__list {
         list-style: none;
-        padding: 0;
         display: flex;
         flex-direction: column;
         gap: 7px;
-
-        li {
-            display: flex;
-            gap: 15px;
-
-        }
     }
 
+    &__item-1 {
+        padding-right: 9px;
+    }
+
+    &__item-2 {
+        padding-right: 3px;
+    }
+
+    i {
+        color: #fff;
+    }
 }
 
-#footer__icon {
-    display: flex;
-    gap: 10px;
+footer a {
+    color: #fff;
 }
 
 
-
-// responsive for tablet &desktop 
 @media (min-width: 768px) {
     .footer {
         display: flex;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
         align-items: center;
-        gap: 100px;
+        gap: 50px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        padding-right: 30px;
 
-        ul {
-             display: flex;
+        &__list {
+            display: flex;
             flex-direction: row;
             gap: 15px;
-
         }
     }
 }
+

@@ -1,0 +1,75 @@
+.tuto {
+    padding-bottom: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__heading {
+        margin-top: 48px;
+        margin-bottom: 26px;
+    }
+
+    &__steps {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 26px; 
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        counter-increment: selection;
+        background-color: #F6F6F6;
+        border-radius: 20px;
+        height: 73px;
+        @include shadow;
+        width: 100%;
+        counter-increment: selection;
+        margin-left: 10px;
+        font-family: Roboto, sans-serif;
+
+        &::before {
+            content: counter(selection);
+            position: relative;
+            left: -12px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            @include flex-center;
+            background-color: $primary-color;
+            color: #FFF;
+        }
+
+    }
+}
+
+.fa-solid {
+    color:  #7E7E7E;
+}
+
+.colored-icon {
+    color: $primary-color;
+}
+
+
+
+// responsive for tablets and desktop
+
+@media (min-width: 768px) {
+
+    .tuto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tuto__steps {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .desktop-size {
+        width: min(1090px,100%);
+    }
+}
