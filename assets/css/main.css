@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +19,72 @@ body {
   margin: 0 auto;
 }
 
+.parent__spiner {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(147, 86, 220, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  animation: fade;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  backdrop-filter: blur(40px); /* flou d'arrière-plan */
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.loader__logo {
+  width: 100px;
+  height: 25px;
+}
+
+.loader__spiner {
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  position: absolute;
+  animation-name: spiner;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spiner {
+  0% {
+    transform: rotate(0deg);
+    visibility: visible;
+  }
+  50% {
+    transform: rotate(180deg);
+    visibility: visible;
+  }
+  to {
+    transform: rotate(360deg);
+    visibility: hidden;
+    display: none;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+  }
+}
 .button {
   height: 50px;
   border-radius: 25px;
