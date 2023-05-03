@@ -133,6 +133,36 @@ body {
     transform: translateX(0);
   }
 }
+.heart__container {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  font-size: 22px;
+}
+.heart__container i {
+  position: absolute;
+  transition: all 0.7s ease-in-out;
+}
+.heart__container:hover .heart__colored {
+  opacity: 1;
+}
+
+.heart__home {
+  right: 20px;
+  bottom: 20px;
+}
+
+.heart__menu {
+  right: -35px;
+}
+
+.heart__colored {
+  opacity: 0;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+}
+
 .form {
   font-family: Roboto, sans-serif;
   display: flex;
@@ -311,6 +341,11 @@ footer a {
     width: min(1090px, 100%);
   }
 }
+.card__container {
+  height: 251px;
+  position: relative;
+}
+
 .card {
   background-color: #fff;
   height: 251px;
@@ -335,24 +370,6 @@ footer a {
   font-size: 17px;
   font-weight: 300;
   padding-top: 5px;
-}
-
-.like {
-  width: 22px;
-  height: 22px;
-  font-size: 22px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.like i:hover {
-  -webkit-background-clip: text;
-  font-weight: 700;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: background-image 2s ease-out;
 }
 
 .sticker-new {
@@ -419,12 +436,12 @@ h1 + p {
     justify-content: space-between;
     row-gap: 50px;
   }
-  .restaurant-link {
+  .card__container {
     width: 45%;
   }
 }
 .restaurant__photo {
-  height: 550px;
+  height: 275px;
   width: 100%;
   position: relative;
   z-index: -1;
@@ -440,7 +457,7 @@ h1 + p {
   background-color: #F6F6F6;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
-  margin-top: -40px;
+  margin-top: -50px;
   padding-top: 30px;
   padding-bottom: 40px;
   display: flex;
@@ -454,6 +471,7 @@ h1 + p {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  position: relative;
 }
 
 .restaurant__name {
@@ -467,8 +485,9 @@ h1 + p {
   margin: 0;
 }
 
-.like {
+.heart__menu {
   margin: 0;
+  right: -35px;
 }
 
 .section-menu__title {
@@ -492,7 +511,7 @@ h1 + p {
 @media (min-width: 768px) {
   .restaurant__menu {
     width: 73%;
-    margin: -40px auto 0 auto;
+    margin: -50px auto 0 auto;
   }
   .starters,
   .dishes,

@@ -1,0 +1,35 @@
+.heart__container {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    font-size: 22px;
+    
+    i {
+        position: absolute;
+        transition: all 0.7s ease-in-out;
+    }
+
+    &:hover {
+        .heart__colored {
+            opacity: 1;
+        }
+    }
+   
+}
+
+.heart__home {
+    right: 20px;
+    bottom: 20px;
+}
+
+.heart__menu {
+    right: -35px;
+
+}
+
+.heart__colored {
+    opacity: 0;
+    -webkit-background-clip: text;
+    background-image: linear-gradient($primary-color, $secondary-color);
+    -webkit-text-fill-color: transparent;
+}

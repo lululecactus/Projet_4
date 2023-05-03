@@ -1,4 +1,9 @@
 // create the card of a restaurant for homepage
+.card__container {
+    height: 251px;
+    position: relative;
+}
+
 .card {
     background-color: #fff;
     height: 251px;
@@ -29,21 +34,6 @@
     }
 }
 
-.like {
-    width: 22px;
-    height: 22px;
-    font-size: 22px;
-    @include flex-center;
-    margin-bottom: 10px;
-   
-    i:hover {
-        -webkit-background-clip: text;
-        font-weight: 700;
-        background-image: linear-gradient($primary-color, $secondary-color);
-        -webkit-text-fill-color: transparent;
-        -webkit-transition: background-image 2s ease-out;
-    }
-}
 
 .sticker-new {
     position: absolute;
