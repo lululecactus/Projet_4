@@ -1,0 +1,74 @@
+.menu__card {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+}
+
+.menu__check {
+    width: 59px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $tertiary-color;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: -59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin-right 0.5s ease-in-out;
+    
+    i {
+        background-color: #fff;
+        padding: 2px 3px;
+        border-radius: 50%;
+        color: $tertiary-color;
+        
+    }
+}
+
+.menu__price {
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.menu__txt {
+    
+    p {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .menu__title {
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+}
+
+.menu__card:hover .menu__check {
+    margin: 0;
+}
+
+.menu__card:hover .menu__price {
+    transform: translateX(-59px);
+    
+}
+
+.menu__card:hover .menu__txt {
+  width: calc(100% - 100px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
