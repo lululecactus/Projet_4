@@ -23,7 +23,7 @@
 
         &:hover {
             opacity: 0.75;
-            @include shadow;
+            @include shadow($offset-x: 0, $offset-y: 4px,  $blur: 15px ,$color:rgba(0, 0, 0, 0.30));
         }
     }
 
